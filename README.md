@@ -24,7 +24,7 @@ For the visual style and overall look and feel of the app I tried to draw inspir
 
 ## Loading Data and images
 
-To populate the super heroes collection view, the view model utilizes a `UICollectionViewDiffableDataSource` to update snapshots of the data when new characters are loaded. When the user starts scrolling new data is loaded automagically in a pging fashion and images are prefetched through the `UICollectionViewDataSourcePrefetching` protocol conformance. Making the loading of data and images (almost)completely transparent to the user.
+To populate the super heroes collection view, the view model utilizes a `UICollectionViewDiffableDataSource` to update snapshots of the data when new characters are loaded. When the user starts scrolling new data is loaded automagically in a paging fashion and images are prefetched through the `UICollectionViewDataSourcePrefetching` protocol conformance. Making the loading of data and images (almost)completely transparent to the user.
 
 <p float="center" align="center">
  	<img src="design/features/loading.gif" width=50%>
@@ -40,7 +40,7 @@ For the search we again depend heavily on our `UICollectionViewDiffableDataSourc
 
 ## Transitioning to Detail
 
-To dive deeper into the details of one the characters of your choosing I created a quick and snappy custom view controller transition using UIKits `UIViewControllerAnimatedTransitioning` and related protocols. The idea was to give the suer the feeling you're really zooming in and out of a character.
+To dive deeper into the details of one the characters of your choosing I created a quick and snappy custom view controller transition using UIKits `UIViewControllerAnimatedTransitioning` and related protocols. The idea was to give the user the feeling you're really zooming in and out of a character.
 
 <p float="center" align="center">
  	<img src="design/features/transitions.gif" width=50%>
