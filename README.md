@@ -24,7 +24,7 @@ For the visual style and overall look and feel of the app I tried to draw inspir
 
 ## Loading Data and images
 
-To populate the super heroes collection view, the view model utilizes a `UICollectionViewDiffableDataSource` to update snapshots of the data when new characters are loaded. When the user starts scrolling new data is loaded automagically and images are prefetched through the `UICollectionViewDataSourcePrefetching` protocol conformance. Making the loading of data and images (almost)completely transparent to the user.
+To populate the super heroes collection view, the view model utilizes a `UICollectionViewDiffableDataSource` to update snapshots of the data when new characters are loaded. When the user starts scrolling new data is loaded automagically in a pging fashion and images are prefetched through the `UICollectionViewDataSourcePrefetching` protocol conformance. Making the loading of data and images (almost)completely transparent to the user.
 
 <p float="center" align="center">
  	<img src="design/features/loading.gif" width=50%>
@@ -48,9 +48,11 @@ To dive deeper into the details of one the characters of your choosing I created
 
 ## What's next?
 
-If I would have had more time I would have loved to spend it on the following subjects(in random order):
+If I would have had more time I would have loved to spend it on the following subjects(in no particar order):
 
+- add unit tests
+- add documentation
+- add loading state
 - improve overview to detail transition
 - optimize image cache
 - simplify and expand JSON models
-- show more details of a character in their detail view
